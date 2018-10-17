@@ -11,6 +11,5 @@ RUN apt-get update && \
 
 COPY slave.jar /usr/share/jenkins/slave.jar  
 COPY jenkins-slave /usr/bin/jenkins-slave
-RUN chmod +x /usr/bin/jenkins-slave
 
 ENTRYPOINT ["jenkins-slave"]
